@@ -214,6 +214,7 @@
     <Content Include="js\pages\widgets\infobox\infobox-4.js" />
     <Content Include="js\pages\widgets\infobox\infobox-5.js" />
     <Content Include="js\script.js" />
+    <Content Include="login.aspx" />
     <Content Include="pages\changelogs.html" />
     <Content Include="pages\charts\chartjs.html" />
     <Content Include="pages\charts\flot.html" />
@@ -3440,6 +3441,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
