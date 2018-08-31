@@ -11,7 +11,7 @@ namespace ejcloset
 {
 
 
-    public partial class testpagewithmaster
+    public partial class adminmanageitemcategory
     {
     }
 }

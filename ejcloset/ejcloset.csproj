@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminmanageitemcategory.aspx" />
     <Content Include="adminpaymenthistory.aspx" />
     <Content Include="adminregistercashier.aspx" />
     <Content Include="adminregisternewstock.aspx" />
@@ -3446,8 +3447,6 @@
     <Content Include="plugins\waitme\waitMe.js" />
     <Content Include="plugins\waitme\waitMe.min.css" />
     <Content Include="plugins\waitme\waitMe.min.js" />
-    <Content Include="testpage.aspx" />
-    <Content Include="testpagewithmaster.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -3457,6 +3456,13 @@
     </Compile>
     <Compile Include="admin.Master.designer.cs">
       <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="adminmanageitemcategory.aspx.cs">
+      <DependentUpon>adminmanageitemcategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminmanageitemcategory.aspx.designer.cs">
+      <DependentUpon>adminmanageitemcategory.aspx</DependentUpon>
     </Compile>
     <Compile Include="adminpaymenthistory.aspx.cs">
       <DependentUpon>adminpaymenthistory.aspx</DependentUpon>
@@ -3494,27 +3500,6 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="testmaster.Master.cs">
-      <DependentUpon>testmaster.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="testmaster.Master.designer.cs">
-      <DependentUpon>testmaster.Master</DependentUpon>
-    </Compile>
-    <Compile Include="testpage.aspx.cs">
-      <DependentUpon>testpage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="testpage.aspx.designer.cs">
-      <DependentUpon>testpage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="testpagewithmaster.aspx.cs">
-      <DependentUpon>testpagewithmaster.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="testpagewithmaster.aspx.designer.cs">
-      <DependentUpon>testpagewithmaster.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="bower.json" />
@@ -3716,7 +3701,6 @@
     <Content Include="scss\_tooltippopovers.scss" />
     <Content Include="scss\_variables.scss" />
     <Content Include="scss\_waveseffect.scss" />
-    <Content Include="testmaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

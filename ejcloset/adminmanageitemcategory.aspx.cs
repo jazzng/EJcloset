@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace ejcloset
 {
-    public partial class testmaster : System.Web.UI.MasterPage
+    public partial class adminmanageitemcategory : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
