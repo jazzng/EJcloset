@@ -70,6 +70,7 @@
   <ItemGroup>
     <Content Include="adminpaymenthistory.aspx" />
     <Content Include="adminregistercashier.aspx" />
+    <Content Include="adminregisternewstock.aspx" />
     <Content Include="App_Data\ejclosetdb.mdf" />
     <Content Include="App_Data\ejclosetdb_log.ldf">
       <DependentUpon>ejclosetdb.mdf</DependentUpon>
@@ -3468,6 +3469,13 @@
     </Compile>
     <Compile Include="adminregistercashier.aspx.designer.cs">
       <DependentUpon>adminregistercashier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminregisternewstock.aspx.cs">
+      <DependentUpon>adminregisternewstock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminregisternewstock.aspx.designer.cs">
+      <DependentUpon>adminregisternewstock.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
