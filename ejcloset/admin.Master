@@ -140,6 +140,20 @@
                             <span>Register New Stock</span>
                         </a>
                     </li>
+
+                     <li>
+                        <a href="adminstockin.aspx">
+                            <i class="material-icons">widgets</i>
+                            <span>Stock In</span>
+                        </a>
+                    </li>
+
+                     <li>
+                        <a href="adminstockout.aspx">
+                            <i class="material-icons">widgets</i>
+                            <span>Stock Out</span>
+                        </a>
+                    </li>
                     
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
