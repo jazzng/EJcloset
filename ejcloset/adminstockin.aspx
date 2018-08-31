@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin.Master" AutoEventWireup="true" CodeBehind="adminregisternewstock.aspx.cs" Inherits="ejcloset.adminregisternewstock" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin.Master" AutoEventWireup="true" CodeBehind="adminstockin.aspx.cs" Inherits="ejcloset.adminstockin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-     <section class="content">
+    <section class="content">
         <div class="container-fluid">
             <!-- Title -->
             <div class="block-header">
-                <h1>REGISTER NEW STOCK</h1>
+                <h1>STOCK IN</h1>
             </div>
 
             <!-- Input -->
@@ -13,7 +13,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>Please Fill In New Stock Details</h2>
+                            <h2>Add Quantity of Current Stock</h2>
 
                             <!-- Top right corner function list -->
                             <%--<ul class="header-dropdown m-r--5">
@@ -32,38 +32,32 @@
 
                         <div class="body">
                             <form>
-                                <label for="item_code">Item Code</label>
+                                <label for="item_code">Item Code <label style="color:red">*</label></label>
                                 <div class="form-group">
                                     <div class="form-line">
                                         <input type="text" id="item_code" class="form-control" placeholder="Enter item's barcode" required="">
                                     </div>
-                                    <button class="btn btn-primary waves-effect" style="margin-left:10px" type="button">REGISTER ITEM</button>
                                 </div>
                                 <label for="item_title">Title</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="item_title" class="form-control" placeholder="Enter name of the item" required="">
+                                        <input type="text" id="item_title" class="form-control" disabled="">
                                     </div>
                                 </div>
                                 <label for="item_price">Price</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="item_price" class="form-control" placeholder="Enter price of the item" required="">
+                                        <input type="text" id="item_price" class="form-control" disabled="">
                                     </div>
                                 </div>
                                 
 
-                        <label for="item_category">Category</label>
-  
-                            <div class="row clearfix">
-                                <div class="col-sm-6">
-                                    <select class="form-control" id="item_category" required="">
-                                        <option value="">-- Please select --</option>
-                                        <option value="10">Category A</option>
-                                        <option value="20">Category B</option>
-                                    </select>
+                                <label for="item_category">Category</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" id="item_category" class="form-control" disabled="">
+                                    </div>
                                 </div>
-                            </div>
 
                                
 
@@ -71,10 +65,10 @@
                                 <div class="form-group">
                                     <div class="form-line">
                                         
-                                        <input type="text" id="item_supplier" class="form-control" placeholder="Enter supplier's name of the item (Optional)">
+                                        <input type="text" id="item_supplier" class="form-control" disabled="">
                                     </div>
                                 </div>
-                                <label for="item_quantity">Quantity</label>
+                                <label for="item_quantity">Stock In Quantity <label style="color:red">*</label></label>
                                 <div class="form-group">
                                     <div class="form-line">
                                         <input type="number" id="item_quantity" class="form-control" required="">
@@ -83,7 +77,7 @@
 
                                 <div style="text-align:right">
                                     <button class="btn btn-warning waves-effect"  type="reset"> CLEAR </button>
-                                <button class="btn btn-primary waves-effect" style="margin-left:10px" type="submit">REGISTER ITEM</button>
+                                <button class="btn btn-primary waves-effect" style="margin-left:10px" type="submit">STOCK IN</button>
                                 
                                 </div>
                             </form>
@@ -94,6 +88,5 @@
             </div>
             </div>
      </section>
-
 
 </asp:Content>

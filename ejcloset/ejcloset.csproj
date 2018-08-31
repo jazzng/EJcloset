@@ -72,6 +72,8 @@
     <Content Include="adminpaymenthistory.aspx" />
     <Content Include="adminregistercashier.aspx" />
     <Content Include="adminregisternewstock.aspx" />
+    <Content Include="adminstockin.aspx" />
+    <Content Include="adminstockout.aspx" />
     <Content Include="App_Data\ejclosetdb.mdf" />
     <Content Include="App_Data\ejclosetdb_log.ldf">
       <DependentUpon>ejclosetdb.mdf</DependentUpon>
@@ -3484,6 +3486,20 @@
     </Compile>
     <Compile Include="adminregisternewstock.aspx.designer.cs">
       <DependentUpon>adminregisternewstock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminstockin.aspx.cs">
+      <DependentUpon>adminstockin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminstockin.aspx.designer.cs">
+      <DependentUpon>adminstockin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminstockout.aspx.cs">
+      <DependentUpon>adminstockout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminstockout.aspx.designer.cs">
+      <DependentUpon>adminstockout.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
