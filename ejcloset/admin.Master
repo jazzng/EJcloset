@@ -35,7 +35,6 @@
     
      <!-- Bootstrap Select Css -->
     <link href="/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
-
 </head>
 
 <body class="theme-blue">
@@ -152,6 +151,34 @@
                         <a href="adminstockout.aspx">
                             <i class="material-icons">widgets</i>
                             <span>Stock Out</span>
+                        </a>
+                    </li>
+
+                   <li>
+                        <a href="adminpaymenthistory.aspx">
+                            <i class="material-icons">widgets</i>
+                            <span>Payment History</span>
+                        </a>
+                    </li>
+
+                   <li>
+                        <a href="adminmanageitemcategory.aspx">
+                            <i class="material-icons">widgets</i>
+                            <span>Manage Item Category</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="admininventorystocklist.aspx">
+                            <i class="material-icons">widgets</i>
+                            <span>Inventory Stock List</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="adminitemreturnhistory.aspx">
+                            <i class="material-icons">widgets</i>
+                            <span>Item Return History</span>
                         </a>
                     </li>
                     
