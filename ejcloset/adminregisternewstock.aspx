@@ -35,20 +35,20 @@
                                 <label for="item_code">Item Code</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="item_code" class="form-control" placeholder="Enter item's barcode" required="">
+                                        <input type="text" id="txt_item_code" runat="server" class="form-control" placeholder="Enter item's barcode" required="">
                                     </div>
-                                    <button class="btn btn-primary waves-effect" style="margin-left:10px" type="button">REGISTER ITEM</button>
+                                 
                                 </div>
                                 <label for="item_title">Title</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="item_title" class="form-control" placeholder="Enter name of the item" required="">
+                                        <input type="text" id="txt_item_title" runat="server" class="form-control" placeholder="Enter name of the item" required="">
                                     </div>
                                 </div>
                                 <label for="item_price">Price</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="item_price" class="form-control" placeholder="Enter price of the item" required="">
+                                        <input type="text" id="txt_item_price" runat="server" class="form-control" placeholder="Enter price of the item" required="">
                                     </div>
                                 </div>
                                 
@@ -57,7 +57,7 @@
   
                             <div class="row clearfix">
                                 <div class="col-sm-6">
-                                    <select class="form-control" id="item_category" required="">
+                                    <select class="form-control" id="ddl_item_category" runat="server" required="">
                                         <option value="">-- Please select --</option>
                                         <option value="10">Category A</option>
                                         <option value="20">Category B</option>
@@ -71,25 +71,26 @@
                                 <div class="form-group">
                                     <div class="form-line">
                                         
-                                        <input type="text" id="item_supplier" class="form-control" placeholder="Enter supplier's name of the item (Optional)">
+                                        <input type="text" id="txt_item_supplier" runat="server" class="form-control" placeholder="Enter supplier's name of the item (Optional)">
                                     </div>
                                 </div>
                                 <label for="item_quantity">Quantity</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="number" id="item_quantity" class="form-control" required="">
+                                        <input type="number" id="txt_item_quantity" runat="server" class="form-control" required="">
                                     </div>
                                 </div>
 
                                 <div style="text-align:right">
                                     <button class="btn btn-warning waves-effect"  type="reset"> CLEAR </button>
-                                <button class="btn btn-primary waves-effect" style="margin-left:10px" type="submit">REGISTER ITEM</button>
+                                <asp:button class="btn btn-primary waves-effect" style="margin-left:10px" OnClick="btn_registeritem_click" runat="server" type="submit" Text="REGISTER ITEM"/>
                                 
                                 </div>
                             </form>
                         </div>
 
             <!-- #END# Input -->
+            </div>
             </div>
             </div>
             </div>

@@ -32,22 +32,28 @@
 
                         <div class="body">
                             <form>
+                                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                                        <asp:UpdatePanel ID="updt1" runat="server">
+                                            <ContentTemplate>
                                 <label for="item_code">Item Code <label style="color:red">*</label></label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="item_code" class="form-control" placeholder="Enter item's barcode" required="">
+                                        
+                                                <asp:TextBox ID="txt_item_code" runat="server" class="form-control" placeholder="Enter item's barcode" AutoPostBack="true" OnTextChanged="txt_item_code_textchanged"></asp:TextBox>
+                                            
+
                                     </div>
                                 </div>
                                 <label for="item_title">Title</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="item_title" class="form-control" disabled="">
+                                        <input type="text" id="txt_item_title" runat="server" class="form-control" disabled="">
                                     </div>
                                 </div>
                                 <label for="item_price">Price</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="item_price" class="form-control" disabled="">
+                                        <input type="text" id="txt_item_price" runat="server" class="form-control" disabled="">
                                     </div>
                                 </div>
                                 
@@ -55,7 +61,7 @@
                                 <label for="item_category">Category</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="item_category" class="form-control" disabled="">
+                                        <input type="text" id="txt_item_category" runat="server"  class="form-control" disabled="">
                                     </div>
                                 </div>
 
@@ -65,19 +71,25 @@
                                 <div class="form-group">
                                     <div class="form-line">
                                         
-                                        <input type="text" id="item_supplier" class="form-control" disabled="">
+                                        <input type="text" id="txt_item_supplier" runat="server" class="form-control" disabled="">
                                     </div>
                                 </div>
                                 <label for="item_quantity">Stock In Quantity <label style="color:red">*</label></label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="number" id="item_quantity" class="form-control" required="">
+                                        <input type="number" id="txt_item_quantity" runat="server" class="form-control" required="">
                                     </div>
                                 </div>
 
+                                                </ContentTemplate>
+                                            <%--<Triggers>
+                                                <asp:AsyncPostBackTrigger ControlID="txt_item_code" EventName="TextChanged" />
+                                            </Triggers>--%>
+                                        </asp:UpdatePanel>
+
                                 <div style="text-align:right">
-                                    <button class="btn btn-warning waves-effect"  type="reset"> CLEAR </button>
-                                <button class="btn btn-primary waves-effect" style="margin-left:10px" type="submit">STOCK IN</button>
+                                    <asp:button class="btn btn-warning waves-effect"  formnovalidate="" runat="server" OnClick="btn_clear_click" Text="CLEAR" />
+                                <asp:button class="btn btn-primary waves-effect" style="margin-left:10px" runat="server" OnClick="btn_stockin_click" type="submit" Text="STOCK IN"/>
                                 
                                 </div>
                             </form>
@@ -87,6 +99,25 @@
             </div>
             </div>
             </div>
+            </div>
      </section>
+
+    <script> 
+        //Functions to open database and to create, insert data into tables
+
+        getSelectedRow = function (val) {
+            db.transaction(function (transaction) {
+                transaction.executeSql('SELECT * FROM Employ where number = ?;', [parseInt(val)], selectedRowValues, errorHandler);
+
+            });
+        };
+        selectedRowValues = function (transaction, results) {
+            for (var i = 0; i < results.rows.length; i++) {
+                var row = results.rows.item(i);
+                alert(row['number']);
+                alert(row['name']);
+            }
+        };
+</script>
 
 </asp:Content>
