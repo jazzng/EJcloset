@@ -33,56 +33,56 @@
                             <form id="form_validation" method="POST">
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" name="user_id" required>
+                                        <input type="text" class="form-control" runat="server" id="txt_user_id" name="user_id" required>
                                         <label class="form-label">User ID</label>
                                     </div>
                                     <div class="help-info">Create user id for login</div>
                                 </div>
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" name="user_fullname" required="">
+                                        <input type="text" class="form-control" runat="server" id="txt_user_fullname" name="user_fullname" required="">
                                         <label class="form-label">Full Name</label>
                                     </div>
                                     <div class="help-info">Enter cashier's full name</div>
                                 </div>
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" name="user_phone" required="">
+                                        <input type="text" class="form-control" runat="server" id="txt_user_phone" name="user_phone" required="">
                                         <label class="form-label">Phone Number</label>
                                     </div>
                                     <div class="help-info">Enter cashier's phone number</div>
                                 </div>
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <textarea name="user_address" cols="30" rows="5" class="form-control no-resize" required=""></textarea>
+                                        <textarea name="user_address" id="txt_user_address" runat="server" cols="30" rows="5" class="form-control no-resize" required=""></textarea>
                                         <label class="form-label">Address</label>
                                     </div>
                                     <div class="help-info">Enter cashier's address</div>
                                 </div>
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="email" class="form-control" name="email">
+                                        <input type="email" class="form-control" runat="server" id="txt_user_email" name="user_email">
                                         <label class="form-label">E-mail</label>
                                     </div>
                                     <div class="help-info">Enter cashier's e-mail (Optional)</div>
                                 </div>
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="password" class="form-control" name="password" required>
+                                        <input type="password" class="form-control" runat="server" id="txt_user_password" name="user_password" required>
                                         <label class="form-label">Password</label>
                                     </div>
                                     <div class="help-info">Create password for login</div>
                                 </div>
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="password" class="form-control" name="password" required>
+                                        <input type="password" class="form-control" runat="server" id="txt_user_password2" name="user_password2" required>
                                         <label class="form-label">Re-type Password</label>
                                     </div>
                                     <div class="help-info">Re-type password for login</div>
                                 </div>
                                 <div style="text-align:right; padding-top:30px">
-                                    <button class="btn btn-warning waves-effect"  type="reset"> CLEAR </button>
-                                <button class="btn btn-primary waves-effect" style="margin-left:10px" type="submit">REGISTER</button>
+                                    <button class="btn btn-warning waves-effect"  type="reset" id="btn_clear"> CLEAR </button>
+                                <asp:button class="btn btn-primary waves-effect" style="margin-left:10px" type="submit" id="btn_register" OnClick="btn_register_click" runat="server" text="REGISTER"/>
                                 
                                 </div>
                             </form>
