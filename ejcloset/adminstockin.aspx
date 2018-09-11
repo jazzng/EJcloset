@@ -39,7 +39,7 @@
                                 <div class="form-group">
                                     <div class="form-line">
                                         
-                                                <asp:TextBox ID="txt_item_code" runat="server" class="form-control" placeholder="Enter item's barcode" AutoPostBack="true" OnTextChanged="txt_item_code_textchanged"></asp:TextBox>
+                                                <asp:TextBox ID="txt_item_code" runat="server" class="form-control" placeholder="Enter item's barcode" AutoPostBack="true" OnTextChanged="txt_item_code_textchanged" required=""></asp:TextBox>
                                             
 
                                     </div>
@@ -74,6 +74,14 @@
                                         <input type="text" id="txt_item_supplier" runat="server" class="form-control" disabled="">
                                     </div>
                                 </div>
+
+                                <label for="item_exisiting_quantity">Existing Quantity</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" id="txt_item_existing_quantity" runat="server" class="form-control" disabled="">
+                                    </div>
+                                </div>
+
                                 <label for="item_quantity">Stock In Quantity <label style="color:red">*</label></label>
                                 <div class="form-group">
                                     <div class="form-line">
@@ -82,16 +90,18 @@
                                 </div>
 
                                                 </ContentTemplate>
-                                            <%--<Triggers>
-                                                <asp:AsyncPostBackTrigger ControlID="txt_item_code" EventName="TextChanged" />
-                                            </Triggers>--%>
                                         </asp:UpdatePanel>
+
+                                
 
                                 <div style="text-align:right">
                                     <asp:button class="btn btn-warning waves-effect"  formnovalidate="" runat="server" OnClick="btn_clear_click" Text="CLEAR" />
-                                <asp:button class="btn btn-primary waves-effect" style="margin-left:10px" runat="server" OnClick="btn_stockin_click" type="submit" Text="STOCK IN"/>
-                                
+                                <asp:button class="btn btn-primary waves-effect" style="margin-left:10px" runat="server" OnClick="btn_stockin_click" data-type="basic" type="submit" Text="STOCK IN"/>
+
                                 </div>
+
+
+                               
                             </form>
                         </div>
 
