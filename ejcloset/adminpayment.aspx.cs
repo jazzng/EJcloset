@@ -11,7 +11,11 @@ namespace ejcloset
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            txt_itemcode.Focus();
+        }
 
+        protected void txt_itemcode_textchanged(object sender, EventArgs e)
+        {
         }
     }
 }
