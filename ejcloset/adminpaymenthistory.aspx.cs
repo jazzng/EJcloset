@@ -23,8 +23,7 @@ namespace ejcloset
                 LoadOnlineData();
                 LoadCreditCardData();
 
-            }
-            
+            }           
             
         }
 
@@ -46,7 +45,7 @@ namespace ejcloset
             html.Append("<div class='table-responsive'>");
 
             //Table start.
-            html.Append("<table id='all' class='table table-bordered table-striped table-hover dataTable js-exportable'>");
+            html.Append("<table class='table table-bordered table-striped table-hover dataTable js-exportable'>");
 
             //Building the Header row.
             html.Append("<thead>");
@@ -56,8 +55,7 @@ namespace ejcloset
             html.Append("<th>Issued By</th>");
             html.Append("<th>Payment Date</th>");
             html.Append("<th>Payment Time</th>");
-            html.Append("<th>Payment Amount (RM)</th>");
-            html.Append("<th>Delete</th>");
+            html.Append("<th>Payment Amount (RM)</th>");            
             html.Append("</tr>");
             html.Append("</thead>");
 
@@ -76,13 +74,9 @@ namespace ejcloset
                     html.Append(row[column.ColumnName]);
                     html.Append("</td>");                    
                 }
-                html.Append("<td>");                
-                html.Append("<button>Delete</button>");
-                html.Append("</td>");
-
                 html.Append("</tr>");
             }
-            html.Append("</tbody>");
+           
 
             //Table end.
             html.Append("</table>");
