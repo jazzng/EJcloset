@@ -76,6 +76,15 @@ namespace ejcloset {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txt_item_supplier;
         
         /// <summary>
+        /// txt_item_existing_quantity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_item_existing_quantity;
+        
+        /// <summary>
         /// txt_item_quantity control.
         /// </summary>
         /// <remarks>

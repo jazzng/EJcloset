@@ -86,6 +86,7 @@
                                 <asp:button class="btn btn-primary waves-effect" style="margin-left:10px" OnClick="btn_registeritem_click" runat="server" type="submit" Text="REGISTER ITEM"/>
                                 
                                 </div>
+                                
                             </form>
                         </div>
 
