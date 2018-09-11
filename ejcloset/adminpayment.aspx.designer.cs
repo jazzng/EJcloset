@@ -13,39 +13,57 @@ namespace ejcloset {
     public partial class adminpayment {
         
         /// <summary>
-        /// txt_item_title control.
+        /// lbl_paymentid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_item_title;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lbl_paymentid;
         
         /// <summary>
-        /// txt_item_price control.
+        /// lbl_issuedby control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_item_price;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lbl_issuedby;
         
         /// <summary>
-        /// txt_item_category control.
+        /// lbl_date control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_item_category;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lbl_date;
         
         /// <summary>
-        /// txt_item_supplier control.
+        /// txt_itemcode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txt_item_supplier;
+        protected global::System.Web.UI.WebControls.TextBox txt_itemcode;
+        
+        /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
+        /// updt1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updt1;
     }
 }

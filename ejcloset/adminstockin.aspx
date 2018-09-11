@@ -39,7 +39,7 @@
                                 <div class="form-group">
                                     <div class="form-line">
                                         
-                                                <asp:TextBox ID="txt_item_code" runat="server" class="form-control" placeholder="Enter item's barcode" AutoPostBack="true" OnTextChanged="txt_item_code_textchanged" required=""></asp:TextBox>
+                                   <asp:TextBox ID="txt_item_code" runat="server" class="form-control" placeholder="Enter item's barcode" AutoPostBack="true" OnTextChanged="txt_item_code_textchanged" required=""></asp:TextBox>
                                             
 
                                     </div>
