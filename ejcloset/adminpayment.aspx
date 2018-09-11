@@ -38,6 +38,8 @@
                                     </div>
                                 </div>
 
+<<<<<<< HEAD
+=======
                                 <%-- Editable Table --%>
                                 <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
                                 <asp:UpdatePanel ID="updt1" runat="server">
@@ -1203,6 +1205,7 @@
                                                 </tr>
                                             </tfoot>
                                         </table>
+>>>>>>> 8506b84db579497df51b8fc345e36266136ac7e5
 
 
 
