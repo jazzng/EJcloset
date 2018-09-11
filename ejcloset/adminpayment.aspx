@@ -25,7 +25,7 @@
                                 </div>
                         </div>
 
-                        <div class="body">
+                        <div class="body" style="padding-bottom:100px">
                             <form>
 
                                 <div class="col-sm-4">
@@ -1205,16 +1205,45 @@
                                         </table>
 
 
-                                    </ContentTemplate>
-                                </asp:UpdatePanel>
+
+                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top: 20px">
+                                            <div class="card">
+                                                <div class="body bg-white">
 
 
+                                                        <table class="nav-justified">
+                                                            <tr>
+                                                                <td style="width: 70px"><label for="subtotal">Subtotal</label></td>
+                                                                <td class="noUi-vertical" style="width: 5px"><label>:</label></td>
+                                                                <td><label id="lbl_subtotal"></label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 70px"><label for="tax">Tax</label></td>
+                                                                <td class="noUi-vertical" style="width: 5px"><label>:</label></td>
+                                                                <td><label id="lbl_tax"></label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 70px"><label for="due">Due</label></td>
+                                                                <td class="noUi-vertical" style="width: 5px"><label>:</label></td>
+                                                                <td><label id="lbl_due"></label></td>
+                                                            </tr>
+                                                        </table>
 
-                                <div style="text-align: right">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div style="text-align:right; margin-top:20px; margin-right:15px">
                                     <asp:Button class="btn btn-warning waves-effect" formnovalidate="" runat="server" Text="CLEAR" />
                                     <asp:Button class="btn btn-primary waves-effect" Style="margin-left: 10px" runat="server" data-type="basic" type="submit" Text="STOCK IN" />
 
-                                </div>
+                                    </div>
+
+                                
+
+                                </ContentTemplate>
+                                </asp:UpdatePanel>
 
 
 
@@ -1222,7 +1251,7 @@
                         </div>
 
                         <!-- #END# Input -->
-                    </div>
+                    </d>
                 </div>
             </div>
         </div>
