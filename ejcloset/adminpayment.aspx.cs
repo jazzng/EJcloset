@@ -17,5 +17,9 @@ namespace ejcloset
         protected void txt_itemcode_textchanged(object sender, EventArgs e)
         {
         }
+
+        private void print()
+        {
+        }
     }
 }
