@@ -71,6 +71,7 @@
     <Content Include="admininventorystocklist.aspx" />
     <Content Include="adminitemreturnhistory.aspx" />
     <Content Include="adminmanageitemcategory.aspx" />
+    <Content Include="adminpayment.aspx" />
     <Content Include="adminpaymenthistory.aspx" />
     <Content Include="adminregistercashier.aspx" />
     <Content Include="adminregisternewstock.aspx" />
@@ -3481,6 +3482,13 @@
     </Compile>
     <Compile Include="adminmanageitemcategory.aspx.designer.cs">
       <DependentUpon>adminmanageitemcategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminpayment.aspx.cs">
+      <DependentUpon>adminpayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminpayment.aspx.designer.cs">
+      <DependentUpon>adminpayment.aspx</DependentUpon>
     </Compile>
     <Compile Include="adminpaymenthistory.aspx.cs">
       <DependentUpon>adminpaymenthistory.aspx</DependentUpon>
