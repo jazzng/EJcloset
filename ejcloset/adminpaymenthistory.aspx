@@ -28,6 +28,7 @@
                                 <asp:PlaceHolder ID="LoadOnline" runat="server"></asp:PlaceHolder>
                                 <asp:PlaceHolder ID="LoadCreditCard" runat="server"></asp:PlaceHolder>
 
+
                             </div>
                         </div>
                     </div>
@@ -38,13 +39,4 @@
 
         </div>
     </section>
-
-    <script type="text/javascript">
-
-
-        $('#all').on("click", "button", function () {
-            console.log($(this).parent());
-            table.row($(this).parents('tr')).remove().draw(false);
-        });
-    </script>
 </asp:Content>
