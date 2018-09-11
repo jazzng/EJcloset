@@ -38,4 +38,13 @@
 
         </div>
     </section>
+
+    <script type="text/javascript">
+
+
+        $('#all').on("click", "button", function () {
+            console.log($(this).parent());
+            table.row($(this).parents('tr')).remove().draw(false);
+        });
+    </script>
 </asp:Content>
