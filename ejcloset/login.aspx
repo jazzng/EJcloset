@@ -53,7 +53,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-4" style="float:right">
-                            <button class="btn btn-block bg-pink waves-effect" type="submit">LOGIN</button>
+                            <asp:button class="btn btn-block bg-pink waves-effect" type="submit" id="btn_login" runat="server" OnClick="btn_login_click" Text="LOGIN"/>
                         </div>
                     </div>
 
