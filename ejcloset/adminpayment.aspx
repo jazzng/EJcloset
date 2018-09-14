@@ -85,15 +85,10 @@
                                                     <td>Delete</td>                                                 
                                                 </tr>
                                         </table>
-<<<<<<< HEAD
                                             </div>
                                     </ContentTemplate>
                                 </asp:UpdatePanel>
-=======
->>>>>>> 8506b84db579497df51b8fc345e36266136ac7e5
 
-
->>>>>>> 598208c64e16e32a261818da92e177d3789d1654
 
                                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top: 20px">
                                             <div class="card">
