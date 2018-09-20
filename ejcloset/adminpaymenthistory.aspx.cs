@@ -15,15 +15,14 @@ namespace ejcloset
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!this.IsPostBack)
-            {
+            
 
                 LoadAllData();
                 LoadCashData();
                 LoadOnlineData();
                 LoadCreditCardData();
 
-            }           
+                     
             
         }
 

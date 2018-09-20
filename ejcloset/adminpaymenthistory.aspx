@@ -20,8 +20,9 @@
                                 <li role="presentation"><a href="#creditcard" data-toggle="tab">CREDIT CARD</a></li>
                             </ul>
 
+
                             <!-- Tab panes -->
-                            <div class="tab-content">                                   
+                            <div id="LoadPayment" class="tab-content">                                   
                                                         
                                 <asp:PlaceHolder ID="LoadAll" runat="server"></asp:PlaceHolder>
                                 <asp:PlaceHolder ID="LoadCash" runat="server"></asp:PlaceHolder>                          
@@ -39,4 +40,5 @@
 
         </div>
     </section>
+
 </asp:Content>

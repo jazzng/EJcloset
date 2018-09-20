@@ -29,7 +29,6 @@
 
                         <div class="body" style="padding-bottom:100px">
                             <form>
-
                                 <div class="col-sm-4">
                                     <label for="item_code">Item Code:</label>
                                     <div class="form-group">
@@ -45,7 +44,7 @@
                                 <asp:UpdatePanel ID="updt1" runat="server">
                                     <ContentTemplate>
                                         <div class="body">
-                                        <table id="example" class="table table-striped" style="width: 100%">
+                                        <table id="payment" class="table table-striped" style="width: 100%">
                                             <thead>
                                                 <tr>
                                                     <th>No</th>
@@ -59,31 +58,23 @@
                                                     <th>Delete</th>
                                                 </tr>
                                             </thead>
+                                            
+                                            <asp:PlaceHolder ID="payment_item" runat="server"></asp:PlaceHolder>
                                             <tbody>
                                                 <tr>
                                                     <td>Tiger Nixon</td>
                                                     <td>Tiger Nixon</td>
                                                     <td>Tiger Nixon</td>
                                                     <td><input type="text" id="row-1-position" name="row-1-position" value="System Architect"></td>
-                                                    <td><input type="text" id="row-1-position" name="row-1-position" value="System Architect"></td>
+                                                    <td><input type="number" id="row-1-position" name="row-1-position" value="1"></td>
                                                     <td><input type="text" id="row-1-position" name="row-1-position" value="System Architect"></td>
                                                     <td><input type="checkbox" id="checkbox" name="checkbox" style="padding-top:20px"><label for="checkbox"></label></td>
                                                     <td>Tiger Nixon</td>
                                                     <td><button type="button" class="btn btn-danger btn-xs dt-delete">
 					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 				</button></td>                                                 
-                                                </tr> 
-                                                <tr>
-                                                    <td>Tiger Nixon</td>
-                                                    <td>Tiger Nixon</td>
-                                                    <td>Tiger Nixon</td>
-                                                    <td><input type="text" id="row-1-position" name="row-1-position" value="System Architect"></td>
-                                                    <td><input type="text" id="row-1-position" name="row-1-position" value="System Architect"></td>
-                                                    <td><input type="text" id="row-1-position" name="row-1-position" value="System Architect"></td>
-                                                    <td><input type="checkbox" id="checkbox1" name="checkbox" style="padding-top:20px"><label for="checkbox1"></label></td>
-                                                    <td>Tiger Nixon</td>
-                                                    <td>Delete</td>                                                 
-                                                </tr>
+                                                </tr>                                                
+                                                </tbody>
                                         </table>
                                             </div>
                                     </ContentTemplate>
@@ -118,24 +109,17 @@
                                         </div>
 
 
-                                        <div style="text-align:right; margin-top:20px; margin-right:15px">
-                                    <asp:Button class="btn btn-warning waves-effect" formnovalidate="" runat="server" Text="CLEAR" />
-                                    <asp:Button class="btn btn-primary waves-effect" Style="margin-left: 10px" runat="server" data-type="basic" type="submit" Text="STOCK IN" />
+                                        <div style="text-align:right; margin-top:20px; margin-right:15px">                                   
+                                    <asp:Button class="btn btn-primary waves-effect" Style="margin-left: 10px" runat="server" data-type="basic" type="submit" Text="PAYMENT" />
 
-                                    </div>
-
-                                
-
-                                </ContentTemplate>
-                                </asp:UpdatePanel>
-
-
+                                    </div>                        
+                             
 
                             </form>
                         </div>
 
                         <!-- #END# Input -->
-                    </d>
+                    </div>
                 </div>
             </div>
         </div>

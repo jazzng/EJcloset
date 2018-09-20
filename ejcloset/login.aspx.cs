@@ -89,7 +89,7 @@ namespace ejcloset
         private void cleartext()
         {
             txt_userid.Value = string.Empty;
-            txt_password.Value = string.Empty
+            txt_password.Value = string.Empty;
         }
     }
 }
