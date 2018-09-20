@@ -81,7 +81,7 @@
                                     <div class="help-info">Re-type password for login</div>
                                 </div>
                                 <div style="text-align:right; padding-top:30px">
-                                    <button class="btn btn-warning waves-effect"  type="reset" id="btn_clear"> CLEAR </button>
+                                    <asp:button class="btn btn-warning waves-effect" runat="server" OnClick="btn_clear_click" id="btn_clear" text="CLEAR"/>
                                 <asp:button class="btn btn-primary waves-effect" style="margin-left:10px" type="submit" id="btn_register" OnClick="btn_register_click" runat="server" text="REGISTER"/>
                                 
                                 </div>

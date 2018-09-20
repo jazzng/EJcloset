@@ -13,6 +13,15 @@ namespace ejcloset {
     public partial class login {
         
         /// <summary>
+        /// sign_in control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm sign_in;
+        
+        /// <summary>
         /// txt_userid control.
         /// </summary>
         /// <remarks>

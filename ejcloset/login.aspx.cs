@@ -28,7 +28,7 @@ namespace ejcloset
         private void login_(String userid, String password)
         {
             String role = verify(userid, password);
-            if (role.Equals(null))
+            if (role == null)
             {
                 Response.Write("<script>alert('Invalid Username or Password');</script>");
                 cleartext();
@@ -66,7 +66,7 @@ namespace ejcloset
 
             if (user_count > 0)
             {
-                SqlCommand cmd_role = new SqlCommand("select count(*) from Users where user_type = 'Admin'", con);
+                SqlCommand cmd_role = new SqlCommand("select count(*) from Users where user_type = 'admin'", con);
                 int role_count = Convert.ToInt32(cmd_role.ExecuteScalar().ToString());
                 if (role_count > 0)
                 {
